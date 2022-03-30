@@ -92,6 +92,14 @@ defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
 
 ###############################################################################
+# Menu		                                                              #
+###############################################################################
+
+# Menu: show the battery
+defaults write com.apple.controlcenter "NSStatusItem Visible Battery" -bool true
+defaults write ~/Library/Preferences/ByHost/com.apple.controlcenter.plist BatteryShowPercentage -bool true
+
+###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
 ###############################################################################
 
