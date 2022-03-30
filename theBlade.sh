@@ -646,6 +646,14 @@ defaults write org.m0k.transmission RandomPort -bool true
 
 
 ###############################################################################
+# install scripts                                                             #
+###############################################################################
+
+# Oh My ZSH!
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+
+
+###############################################################################
 # Kill affected applications                                                  #
 ###############################################################################
 
