@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-#/ Usage: bin/theBase.sh [--debug]
+#/ Usage: bin/theBlade.sh [--debug]
 
 # Close any open System Preferences panes, to prevent them from overriding
 # settings we’re about to change
@@ -17,10 +17,10 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 ###############################################################################
 
 # Set computer name (as done via System Preferences → Sharing)
-sudo scutil --set ComputerName "theBase"
-sudo scutil --set HostName "theBase"
-sudo scutil --set LocalHostName "theBase"
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "theBase"
+sudo scutil --set ComputerName "theBlade"
+sudo scutil --set HostName "theBlade"
+sudo scutil --set LocalHostName "theBlade"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "theBlade"
 
 
 # Disable the startup chime on boot
